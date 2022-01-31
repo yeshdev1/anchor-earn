@@ -1,0 +1,203 @@
+.main {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+
+.mainHeader {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.miscActions {
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 900;
+}
+
+h1 a {
+    margin-left: 1.1em;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+}
+
+.miscActions {
+    display: flex;
+    gap: 10px;
+}
+
+.contentBox {
+    border-radius: 20px;
+    min-width: 0px;
+    color: rgb(31, 31, 31);
+    background: rgb(244, 244, 245);
+    box-shadow: rgb(218 218 222) 1px 1px 2px, rgb(255 255 255) -1px -1px 2px;
+    margin-bottom: 40px;
+}
+
+.section {
+    padding: 60px;
+}
+
+.sectionHeader {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    color: rgb(31, 31, 31);
+}
+
+.amount {
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(31, 31, 31);
+}
+
+.actions {
+    text-align: right;
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+}
+
+.actionButtons {
+    width: 100px;
+    border: 0px;
+    height: 42px;
+    border-radius: 21px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.deposit-color {
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 44, 44);
+}
+
+.withdraw-color {
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
+}
+
+.action-heading {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.margin-input {
+    margin-bottom: 100px;
+}
+
+.float-container {
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 8px;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    background-color: rgb(241, 241, 241);
+}
+    
+.float-container input {
+    border: none;
+    font-size: 16px;
+    outline: 0;
+    padding: 16px 0 10px;    
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+  
+.float-container label {
+    font-size: 16px;
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 4px) scale(.75);
+    color: rgb(58, 115, 134);
+    background-color: rgb(241, 241, 241);
+    margin-bottom: 5px;
+}
+
+.float-container .currency{
+    font-size: 20px;
+    position: absolute;
+    transform-origin: right;
+    transform: translate(-100%, 10px); 
+    color: black;
+    background-color: rgb(241, 241, 241);
+}
+
+.max {
+    font-size: 10px;
+    color: rgb(165, 164, 164);
+    text-decoration: underline;
+    background-color: white;
+    margin-right: 20%;
+}
+
+.summary {
+    text-align: center;
+}
+
+.costs {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: rgb(138, 138, 138)
+}
+
+.proceed {
+    margin: 30px;
+    background-color: black;
+    color: white;
+}
+
+.currency {
+    font-size: 18px;
+}
+
+.complete {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+hr {
+    border-top: 1px solid black;
+    margin: 10px;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
