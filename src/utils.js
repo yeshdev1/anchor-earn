@@ -10,3 +10,7 @@ export const chooseAction = (type, actions) => {
             return actions.balance
     }
 }
+
+export const roundToTwo = (num) => {
+    return +(Math.round(num + "e+2")  + "e-2");
+}

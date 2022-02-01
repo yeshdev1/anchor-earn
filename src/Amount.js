@@ -1,8 +1,5 @@
 import './Main.css';
-
-const roundToTwo = (num) => {
-    return +(Math.round(num + "e+2")  + "e-2");
-}
+import { roundToTwo } from './utils';
 
 //by default the currency is UST
 export default ({

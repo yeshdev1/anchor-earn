@@ -3,6 +3,7 @@ import './Main.css';
 import DisplayTile from './DisplayTile';
 import Amount from './Amount'
 import ActionTile from './ActionTile';
+import Interest from './Interest';
 
 export default ({
     section = "EARN",
@@ -26,8 +27,8 @@ export default ({
                 <Amount amount={deposit} currency={currency} />
                 <ActionTile getRetrieveBalance={getRetrieveBalance} withdrawAmount={account} depositAmount={deposit} />
             </DisplayTile>
-            <DisplayTile apy={apy} heading={"INTEREST"}>
-                
+            <DisplayTile heading={"INTEREST"}>
+                <Interest apy={apy} />
             </DisplayTile>
             <DisplayTile heading={"EXPECTED INTEREST"}>
                 <Amount amount={deposit} currency={currency} apy={apy} />

@@ -201,3 +201,24 @@ hr {
       opacity: 0;
     }
   }
+
+.value {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(75, 219, 75);
+    margin-bottom: 50px;
+}
+
+.apy {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: rgb(31, 31, 31);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 19px;
+    border-radius: 13px;
+    display: inline-block;
+    cursor: help;
+    margin-bottom: 5px;
+}

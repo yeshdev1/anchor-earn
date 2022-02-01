@@ -1,4 +1,5 @@
 import './style.css';
+import { roundToTwo } from './utils';
 
 const Header = ({
   account
@@ -41,7 +42,7 @@ const Header = ({
         <section className="wallet">
           <button className="wallet-button">
             <span>
-              {account} UST
+              {roundToTwo(account)} UST
             </span>
           </button>
         </section>

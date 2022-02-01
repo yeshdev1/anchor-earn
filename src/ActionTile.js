@@ -147,7 +147,7 @@ export default ({
         toggleModalStatus([false,null])
         getRetrieveBalance(true)
     }
-
+    
     return (
         <div className="amount actions">
             <button className="actionButtons deposit-color" onClick={() => toggleModalStatus(prevState => { return [true, "deposit"] })}>

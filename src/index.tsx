@@ -16,18 +16,19 @@ function App() {
   useEffect(() => {
     const actions = protocolActions()
     actions.balance().then(res => {
-      setAccountBalance(parseInt(res.total_account_balance_in_ust))
-      setDepositBalance(parseInt(res.total_deposit_balance_in_ust))
+      setAccountBalance(parseFloat(res.total_account_balance_in_ust))
+      setDepositBalance(parseFloat(res.total_deposit_balance_in_ust))
     })
     actions.market().then(res => {
       setMarketInformation(prevState => {
         return {
           ...prevState,
-          apy: res.markets[0].APY,
+          apy: parseFloat(res.markets[0].APY),
           currency: res.markets[0].currency
         }
       })
     })
+    setRetrieveBalance(false);
   }, [retrieveBalance]);
 
   return (
